@@ -1,9 +1,21 @@
+@font-face{
+  font-family: Qatar;
+  src: url(../public/fonts/Qatar2022/Qatar2022Arabic-Bold.ttf);
+}
+
+@font-face{
+  font-family: QatarBold;
+  src: url(../public/fonts/Qatar2022/Qatar2022Arabic-Heavy.ttf);
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Qatar, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -15,12 +27,35 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+button {
+  font-family: Qatar;
 }
+
+input {
+  font-family: Qatar;
+}
+
+footer {
+  height: 40vh;
+  width: 100%;
+  background: #8a1538;
+  display: inline-block;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 0;
+  position: absolute;
+}
+
+/* 
+body::-webkit-scrollbar{
+  width: 17.5px;          
+}
+
+body::-webkit-scrollbar-track{
+  background: #eee; 
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #bbb;
+} */
