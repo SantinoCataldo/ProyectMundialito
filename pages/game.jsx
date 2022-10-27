@@ -86,9 +86,7 @@ export default function Game() {
                 </header>
 
                 <section className={styles.cont}>
-                    <div className={styles.video}>
-                        <video src="/img/qatar.mp4" loop autoPlay muted></video>
-                    </div>
+             
                     <div className={styles.timer2}>
                         <div>
                             <h4>{TimerDays}</h4>
@@ -107,6 +105,7 @@ export default function Game() {
                     </div>
                     <div className={styles.redirect}>
                         <h1>World Proyect</h1>
+                        <h2>Game</h2>
                     </div>
                 </section>
 

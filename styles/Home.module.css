@@ -214,6 +214,7 @@
 .header2 div a {
   margin: 0 10px;
   cursor: pointer;
+  transition: .4s;
 }
 
 .header2 div a:hover {
@@ -241,7 +242,7 @@
 /* ¿¿¿cont??? */
 
 .cont{
-  background: #8a1538;
+  background: #550065;
   height: 100vh;
   width: 100%;
   color: #eeeee4;
@@ -424,22 +425,22 @@
 /*---- GRUPOS ----*/
 
 .game_groups {
-  background: #ff4700;
-  border-radius: 10px;
+  background: #00c6ae;
   height: 320px;
   width: 280px;
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 0 16px;
-  color: #eeeee4;
+  color: #550065;
+ border: 1px solid #550065;
 }
 
 .game_groups div {
   display: flex;
   margin: 5px 0;
   padding: 8px;
-  background: #8a1538;
+  background: #550065;
   border-radius: 5px;
   gap: 10px;
   align-items: center;
@@ -471,26 +472,23 @@
 .result {
   height: 320px;
   width: 700px;
-  background: #8a1538;
-  border-radius: 10px;
-  padding: 16px;
   position: relative;
   display: flex;
-  column-gap: 16px;
+  column-gap: 5px;
 }
 
 .result .result_cont {
   width: 33%;
   height: 100%;
-  border-radius: 5px;
   margin-bottom: 5px;
-  background: #ff4700;
+  background: #550065;
+  border: 1px solid #00c6ae;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  color: #eeeee4;
+  color: #ff4700;
   font-size: 20px;
   font-family: QatarBold;
 }
@@ -502,7 +500,7 @@
 }
 
 .result input {
-  background: #eeeee4;
+  background: #d4c164;
   border: 0;
   text-align: center;
   font-size: 16px;

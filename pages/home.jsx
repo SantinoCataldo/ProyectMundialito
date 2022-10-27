@@ -133,20 +133,6 @@ export default function Home() {
                     </div>
                     <img src="/img/marado.jpg" alt="maradona" />
                 </section>
-
-                {/* <section className={styles.register} id="register">
-                    <div className={styles.register_container}>
-                        <img src="/img/copa.jpg" alt="" />
-                        <h2>Ingreso</h2>
-                        <form action="">
-                            <p>Correo</p>
-                            <input type="email" name="email" required />
-                            <p>Contraseña</p>
-                            <input type="password" name="contraseña" required />
-                            <button className={styles.button}>Enviar</button>
-                        </form>
-                    </div>
-                </section> */}
             </section>
         </div>
     )
