@@ -32,7 +32,7 @@ export default function Home() {
                     <Timer />
                     <div className={styles.redirect}>
                         <h1>World Proyect</h1>
-                        <a href="#register"><button className={styles.button}>Registrate</button></a>
+                        <a href="register"><button className={styles.button}>Registrate</button></a>
                     </div>
                 </section>
 

@@ -24,7 +24,7 @@ export default function Nav() {
                         <h4>World Proyect</h4>
                     </div>
                     <div>
-                        <a href="#info">Infromacion</a>
+                        <a href="#info">Informacion</a>
                         <Image src="/img/rombo.jpg" alt="Rombo" width={8} height={8} />
                         <a href="#groups">Fase de Grupos</a>
                         <Image src="/img/rombo.jpg" alt="Rombo" width={8} height={8} />
