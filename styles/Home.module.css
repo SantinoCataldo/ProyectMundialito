@@ -2,837 +2,866 @@
   --arena: #eeeee4;
   --verde: #00c6ae; */
 
-@font-face{
-  font-family: Qatar;
-  src: url(../public/fonts/Qatar2022/Qatar2022Arabic-Bold.ttf);
-}
-
-@font-face{
-  font-family: QatarBold;
-  src: url(../public/fonts/Qatar2022/Qatar2022Arabic-Heavy.ttf);
-}
-
-
-.container {
-  padding: 0;
-  margin: 0;
-}
-
-/*----- INDEX -----*/
-
-.logo {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-
-.messi {
-  height: 100%;
-  width: 30%;
-  background: url(../public/img/messi.jpg);
-  background-size: cover;
-  position: absolute;
-  left: 0;
-}
-
-.entry {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /* background: url(../public/img/copa.jpg); */
-  background: #eeeee4;
-  background-size: cover;
-  color: #8a1538;
-  font-size: 50px;
-  height: 100vh;
-  width: 100%;
-}
-
-.entry h1 {
-  margin-bottom: 20px;
-  font-family: QatarBold;
-  color: #8a1538;
-  text-align: center;
-}
-
-.button {
-  padding: 9px 10px;
-  border: 0;
-  font-size: 15px;
-  clip-path: polygon(18% 25%, 82% 25%, 100% 50%, 82% 75%, 18% 75%, 0% 50%);
-  background: #00c6ae;
-  padding: 35px 30px;
-  color: #eeeee4;
-  transition: .3s;
-  cursor: pointer;
-  letter-spacing: 1px;
-}
-
-.button:hover {
-  scale: 1.05;
-}
-
-.timer {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.timer div {
-  margin: 0px 16px;
-}
-
-.timer div h4 {
-  font-size: 48px;
-  margin-top: 20px;
-  margin-bottom: -25px;
-  font-family: QatarBold;
-}
-
-.timer div p {
-  font-size: 12px;
-  text-align: center;
-}
-
-.info {
-  font-size: 13px;
-  width: 45%;
-  border: 1px solid #8a1538;
-  padding: 10px 1px 10px 13px;
-  margin-top: 20px;
-  line-height: 21px;
-}
-
-.info p {
-  margin: 0;
-}
-
-/*---- HOME ----*/
-
-.header {
-  background: transparent;
-  z-index: 100;
-  height: 10vh;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  color: #eeeee4;
-  position: fixed;
-  transition: .6s;
-  border-bottom: 1px solid #eeeee4;
-}
-
-.header div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-}
-
-.header .logo1 {
-  height: 50px;
-  width: 110px;
-  background: url(../public/img/logo2.jpg);
-  background-size: cover;
-  transition: .6s;
-}
-
-.header div h4 {
-  margin-left: 20px;
-  font-size: 16px;
-}
-
-.header div a {
-  margin: 0 10px;
-  cursor: pointer;
-  transition: .4s;
-}
-
-.header div a:hover {
-  color: #8a1538;
-}
-
-.header button {
-  padding: 9px 10px;
-  border: 0;
-  font-size: 14px;
-  clip-path: polygon(15% 25%, 85% 25%, 100% 50%, 85% 75%, 15% 75%, 0% 50%);
-  background: #8a1538;
-  padding: 30px 20px;
-  margin-right: 10px;
-  color: #eeeee4;
-  transition: .3s;
-  cursor: pointer;
-  letter-spacing: 1px;
-}
-
-.header button:hover {
-  scale: 1.05;
-}
-
-/*---- SCROLL ----*/
-
-.header2 {
-  z-index: 100;
-  background: #eeeee4;
-  height: 10vh;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  color: #8a1538;
-  position: fixed;
-  transition: .6s;
-  border-bottom: 1px solid #8a1538;
-}
-
-.header2 div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-}
-
-.header2 .logo1 {
-  height: 52px;
-  width: 105px;
-  background: url(../public/img/logo.jpg);
-  background-size: cover;
-  transition: .6s;
-}
-
-.header2 div h4 {
-  margin-left: 20px;
-  font-size: 16px;
-}
-
-.header2 div a {
-  margin: 0 10px;
-  cursor: pointer;
-  transition: .4s;
-}
-
-.header2 div a:hover {
-  color: #00c6ae;
-}
-
-.header2 button {
-  padding: 9px 10px;
-  border: 0;
-  font-size: 14px;
-  clip-path: polygon(15% 25%, 85% 25%, 100% 50%, 85% 75%, 15% 75%, 0% 50%);
-  background: #8a1538;
-  padding: 30px 20px;
-  margin-right: 10px;
-  color: #eeeee4;
-  transition: .3s;
-  cursor: pointer;
-  letter-spacing: 1px;
-}
-
-.header2 button:hover {
-  scale: 1.05;
-}
-
-/*---- HEADER3 ----*/
-
-.header3 {
-  z-index: 100;
-  background: #eeeee4;
-  height: 10vh;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  color: #550065;
-  position: fixed;
-  transition: .6s;
-  border-bottom: 1px solid #550065;
-}
-
-.header3 div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-}
-
-.header3 .logo1 {
-  height: 52px;
-  width: 105px;
-  background: url(../public/img/logo.jpg);
-  background-size: cover;
-  transition: .6s;
-}
-
-.header3 div h4 {
-  margin-left: 20px;
-  font-size: 16px;
-}
-
-.header3 div a {
-  margin: 0 10px;
-  cursor: pointer;
-  transition: .4s;
-}
-
-.header3 div a:hover {
-  color: #00c6ae;
-}
-
-.header3 button {
-  padding: 9px 10px;
-  border: 0;
-  font-size: 14px;
-  clip-path: polygon(15% 25%, 85% 25%, 100% 50%, 85% 75%, 15% 75%, 0% 50%);
-  background: #ff4700;
-  padding: 30px 20px;
-  margin-right: 10px;
-  color: #eeeee4;
-  transition: .3s;
-  cursor: pointer;
-  letter-spacing: 1px;
-}
-
-.header3 button:hover {
-  scale: 1.05;
-}
-
-/* ¿¿¿cont??? */
-
-.cont{
-  background: #550065;
-  height: 100vh;
-  width: 100%;
-  color: #eeeee4;
-  margin: 0;
-}
-
-.cont .video video{
-  position: absolute;
-  z-index: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.timer2 {
-  position: absolute;
-  left: 50px;
-  bottom: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.timer2 div {
-  margin: 0px 16px;
-}
-
-.timer2 div h4 {
-  font-size: 48px;
-  margin-top: 20px;
-  margin-bottom: -25px;
-  font-family: QatarBold;
-}
-
-.timer2 div p {
-  font-size: 12px;
-  text-align: center;
-}
-
-.redirect {
-  position: absolute;
-  right: 10%;
-  top: 30%;
-  text-align: center;
-}
-
-.redirect h1 {
-  font-size: 64px;
-  font-family: QatarBold;
-}
-
-/*---- GROUPS ----*/
-
-.groups {
-  height: 100vh;
-  width: 100%;
-  background: #eeeee4;
-  display: inline-block;
-  padding: 70px 100px 50px;
-}
-
-.groups h2 {
-  color: #8a1538;
-  font-size: 32px;
-}
-
-.groups div {
-  translate: 450px;
-  height: 380px;
-  width: 700px;
-  background: url(../public/img/grupos.jpg);
-  background-size: cover;
-}
-
-.people {
-  height: 80vh;
-  width: 100%;
-  background: url(../public/img/orange.jpg);
-  background-size: cover;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  color: #eeeee4;
-}
-
-.people h2 {
-  font-size: 48px;
-}
-
-.people p {
-  font-size: 64px;
-  color: #00c6ae;
-}
-
-.people img {
-  height: 90%;
-}
-
-
-/*---- INFORMACION ----*/
-
-.informative {
-  height: 100vh;
-  width: 100%;
-  background: #8a1538;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  color: #eeeee4;
-}
-
-.informative div {
-  width: 40%;
-}
-
-/*---- REGISTRO ----*/
-
-.register {
-  height: 100vh;
-  width: 100%;
-  background: #eeeee4;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.register_container {
-  height: 500px;
-  width: 25%;
-  border: 1px solid #8a1538;
-  text-align: center;
-  color: #8a1538;
-}
-
-.register_container img {
-  object-fit: cover;
-  width: 100%;
-  height: 33%;
-  border-bottom: 1px solid #8a1538;
-}
-
-.register input {
-  border: 0;
-  border-bottom: 1px solid #8a1538;
-  background: #eeeee4;
-  font-size: 14px;
-  padding: 10px 0 0;
-  width: 80%;
-  color: #8a1538;
-}
-
-.register input:focus {
-  border: 1px solid rgba(249, 249, 249, 0.3);
-}
-
-/*---- GAME -----*/
-
-.game {
-  min-height: 500vh;
-  width: 100%;
-  background: #eeeee4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 100px;
-  flex-wrap: wrap;
-  position: relative;
-  padding-top: 100px;
-}
-
-.game h2 {
-  position: absolute;
-  top: -20px;
-  color: #00c6ae;
-  font-size: 48px;
-}
-
-/*---- GRUPOS ----*/
-
-.game_groups {
-  background: #00c6ae;
-  height: 320px;
-  width: 280px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 16px;
-  color: #550065;
-  border: 1px solid #550065;
-  margin-bottom: 10px;
-}
-
-.game_groups div {
-  display: flex;
-  margin: 5px 0;
-  padding: 8px;
-  background: #550065;
-  border-radius: 5px;
-  gap: 10px;
-  align-items: center;
-  color: #eeeee4;
-}
-
-.game_groups img {
-  height: 30px;
-  border: 1px solid #d4c164;
-}
-
-.game_groups p {
-  margin: 0;
-}
-
-.game_groups h4 {
-  font-family: QatarBold;
-  font-size: 20px;
-}
-
-.game_groups div h4 {
-  margin: 0;
-  font-size: 19px;
-  color: #d4c164;
-}
-
-/*---- PREDICTS ----*/
-
-.result {
-  height: 320px;
-  width: 700px;
-  position: relative;
-  display: flex;
-  column-gap: 5px;
-  margin-bottom: 10px;
-}
-
-.result .result_cont {
-  width: 33%;
-  height: 100%;
-  margin-bottom: 5px;
-  background: #550065;
-  border: 1px solid #00c6ae;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  color: #ff4700;
-  font-size: 20px;
-  font-family: QatarBold;
-}
-
-.result div .form{
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.result input {
-  background: #00c6ae;
-  border: 0;
-  text-align: center;
-  font-size: 16px;
-  width: 30px;
-  color: #550065;
-  font-family: QatarBold;
-}
-
-.result img {
-  height: 30px;
-  border: 1px solid #d4c164;
-}
-
-/*---- PLAYOFFS ----*/
-
-.playoffs {
-  width: 100%;
-  height: 125vh;
-  padding: 50px;
-  display: flex;
-  column-gap: 45px;
-}
-
-/*---- OCTAVOS ----*/
-
-.eighths,
-.quarter {
-  width: 22%;
-}
-
-.eighths h3 ,
-.quarter h3,
-.semifinal h3,
-.final h3 {
-  font-size: 32px;
-  color: #550065;
-  text-align: center;
-}
-
-/*---- CUARTOS ----*/
-
-.quarter .playoffs_groups div p{
-  margin: 3px 0;
-  font-size: 13px;
-  text-align: center;
-}
-
-.quarter .playoffs_groups{
-  margin: 28% 0;
-}
-
-/*---- SEMI ----*/
-
-.semifinal {
-  width: 23%;
-}
-
-.semifinal .playoffs_groups div p {
-  font-size: 12px;
-}
-
-.semifinal .playoffs_groups {
-  white-space: nowrap;
-}
-
-.semifinal .playoffs_groups{
-  margin: 62% 0;
-}
-
-/*---- FINAL ----*/
-
-.final {
-  width: 23%;
-}
-
-.final .playoffs_groups{
-  height: 12%;
-  margin: 100% 0;
-}
-
-.playoffs_groups {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 20px;
-  color: #550065;
-  background: #00c6ae;
-  border: 1px solid #550065;
-  margin-bottom: 10px;
-}
-
-.playoffs_groups div p{
-  margin: 0;
-  text-align: center;
-}
-
-.playoffs_groups input {
-  background: #d4c164;
-  border: 0;
-  text-align: center;
-  font-size: 16px;
-  width: 35px;
-  height: 25px;
-  color: #550065;
-  font-family: QatarBold;
-}
-
-.playoffs_groups img {
-  height: 30px;
-  border: 1px solid #d4c164;
-}
-
-/*---- RESPONSIVE PARA CELULAR ROTADO ----*/
-
-@media only screen and (max-height:500px){
-
-  .header {
-    height: 17vh;
+  @font-face {
+    font-family: Qatar;
+    src: url(../public/fonts/Qatar2022/Qatar2022Arabic-Bold.ttf);
   }
 
-  .header2{
-    height: 17vh;
-  } 
+  @font-face {
+    font-family: QatarBold;
+    src: url(../public/fonts/Qatar2022/Qatar2022Arabic-Heavy.ttf);
+  }
 
-  .groups {
+
+  .container {
     padding: 0;
-    height: 100vh;
+    margin: 0;
+  }
+
+  /*----- INDEX -----*/
+
+  .logo {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .messi {
+    height: 100%;
+    width: 30%;
+    background: url(../public/img/messi.jpg);
+    background-size: cover;
+    position: absolute;
+    left: 0;
+  }
+
+  .entry {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* background: url(../public/img/copa.jpg); */
+    background: #eeeee4;
+    background-size: cover;
+    color: #8a1538;
+    font-size: 50px;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .entry h1 {
+    margin-bottom: 20px;
+    font-family: QatarBold;
+    color: #8a1538;
+    text-align: center;
+  }
+
+  .button {
+    padding: 9px 10px;
+    border: 0;
+    font-size: 15px;
+    clip-path: polygon(18% 25%, 82% 25%, 100% 50%, 82% 75%, 18% 75%, 0% 50%);
+    background: #00c6ae;
+    padding: 35px 30px;
+    color: #eeeee4;
+    transition: .3s;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+
+  .button:hover {
+    scale: 1.05;
+  }
+
+  .timer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .timer div {
+    margin: 0px 16px;
+  }
+
+  .timer div h4 {
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: -25px;
+    font-family: QatarBold;
+  }
+
+  .timer div p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .info {
+    font-size: 13px;
+    width: 45%;
+    border: 1px solid #8a1538;
+    padding: 10px 1px 10px 13px;
+    margin-top: 20px;
+    line-height: 21px;
+  }
+
+  .info p {
+    margin: 0;
+  }
+
+  /*---- HOME ----*/
+
+  .header {
+    background: transparent;
+    z-index: 100;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #eeeee4;
+    position: fixed;
+    transition: .6s;
+    border-bottom: 1px solid #eeeee4;
+  }
+
+  .header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .header .logo1 {
+    height: 50px;
+    width: 110px;
+    background: url(../public/img/logo2.jpg);
+    background-size: cover;
+    transition: .6s;
+  }
+
+  .header div h4 {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+
+  .header div a {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: .4s;
+  }
+
+  .header div a:hover {
+    color: #8a1538;
+  }
+
+  .header button {
+    padding: 9px 10px;
+    border: 0;
+    font-size: 14px;
+    clip-path: polygon(15% 25%, 85% 25%, 100% 50%, 85% 75%, 15% 75%, 0% 50%);
+    background: #8a1538;
+    padding: 30px 20px;
+    margin-right: 10px;
+    color: #eeeee4;
+    transition: .3s;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+
+  .header button:hover {
+    scale: 1.05;
+  }
+
+  /*---- SCROLL ----*/
+
+  .header2 {
+    z-index: 100;
+    background: #eeeee4;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #8a1538;
+    position: fixed;
+    transition: .6s;
+    border-bottom: 1px solid #8a1538;
+  }
+
+  .header2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .header2 .logo1 {
+    height: 52px;
+    width: 105px;
+    background: url(../public/img/logo.jpg);
+    background-size: cover;
+    transition: .6s;
+  }
+
+  .header2 div h4 {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+
+  .header2 div a {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: .4s;
+  }
+
+  .header2 div a:hover {
+    color: #00c6ae;
+  }
+
+  .header2 button {
+    padding: 9px 10px;
+    border: 0;
+    font-size: 14px;
+    clip-path: polygon(15% 25%, 85% 25%, 100% 50%, 85% 75%, 15% 75%, 0% 50%);
+    background: #8a1538;
+    padding: 30px 20px;
+    margin-right: 10px;
+    color: #eeeee4;
+    transition: .3s;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+
+  .header2 button:hover {
+    scale: 1.05;
+  }
+
+  /*---- HEADER3 ----*/
+
+  .header3 {
+    z-index: 100;
+    background: #eeeee4;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #550065;
+    position: fixed;
+    transition: .6s;
+    border-bottom: 1px solid #550065;
+  }
+
+  .header3 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .header3 .logo1 {
+    height: 52px;
+    width: 105px;
+    background: url(../public/img/logo.jpg);
+    background-size: cover;
+    transition: .6s;
+  }
+
+  .header3 div h4 {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+
+  .header3 div a {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: .4s;
+  }
+
+  .header3 div a:hover {
+    color: #00c6ae;
+  }
+
+  .header3 button {
+    padding: 9px 10px;
+    border: 0;
+    font-size: 14px;
+    clip-path: polygon(15% 25%, 85% 25%, 100% 50%, 85% 75%, 15% 75%, 0% 50%);
+    background: #ff4700;
+    padding: 30px 20px;
+    margin-right: 10px;
+    color: #eeeee4;
+    transition: .3s;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+
+  .header3 button:hover {
+    scale: 1.05;
+  }
+
+  /* ¿¿¿cont??? */
+
+  .cont {
+    background: #550065;
+    height: 100vh;
+    width: 100%;
+    color: #eeeee4;
+    margin: 0;
+  }
+
+  .cont .video video {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .timer2 {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .timer2 div {
+    margin: 0px 16px;
+  }
+
+  .timer2 div h4 {
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: -25px;
+    font-family: QatarBold;
+  }
+
+  .timer2 div p {
+    font-size: 12px;
+    text-align: center;
   }
 
   .redirect {
     position: absolute;
-    right: 5%;
-    top: 10%;
+    right: 10%;
+    top: 30%;
     text-align: center;
   }
 
   .redirect h1 {
-    margin-bottom: 0;
+    font-size: 64px;
+    font-family: QatarBold;
+  }
+
+  /*---- GROUPS ----*/
+
+  .groups {
+    height: 100vh;
+    width: 100%;
+    background: #eeeee4;
+    display: inline-block;
+    padding: 70px 100px 50px;
+  }
+
+  .groups h2 {
+    color: #8a1538;
+    font-size: 32px;
   }
 
   .groups div {
-    translate: 0;
-    height: 230px;
-    width: 425px;
+    translate: 450px;
+    height: 380px;
+    width: 700px;
     background: url(../public/img/grupos.jpg);
     background-size: cover;
   }
 
   .people {
-    height: 90vh;
-    gap: 50px;
+    height: 80vh;
+    width: 100%;
+    background: url(../public/img/orange.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: #eeeee4;
   }
 
   .people h2 {
-    font-size: 40px;
-    margin-bottom: -50px;
+    font-size: 48px;
+  }
+
+  .people p {
+    font-size: 64px;
+    color: #00c6ae;
   }
 
   .people img {
-    height: 85%;
-    margin-right: 50px;
+    height: 90%;
   }
+
+
+  /*---- INFORMACION ----*/
+
+  .informative {
+    height: 100vh;
+    width: 100%;
+    background: #8a1538;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #eeeee4;
+  }
+
+  .informative div {
+    width: 40%;
+  }
+
+  /*---- REGISTRO ----*/
 
   .register {
     height: 100vh;
+    width: 100%;
+    background: #eeeee4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   .register_container {
-    width: 60%;
-    height: 360px;
+    height: 500px;
+    width: 25%;
+    border: 1px solid #8a1538;
+    text-align: center;
+    color: #8a1538;
   }
 
   .register_container img {
     object-fit: cover;
     width: 100%;
-    height: 20%;
+    height: 33%;
     border-bottom: 1px solid #8a1538;
   }
 
-}
-
-/*---- RESPONSIVE PARA CELULAR NORMAL ----*/
-
-@media only screen and (max-width:550px) {
-  
-  .entry {
-    height: 100vh;
+  .register input {
+    border: 0;
+    border-bottom: 1px solid #8a1538;
+    background: #eeeee4;
+    font-size: 14px;
+    padding: 10px 0 0;
+    width: 80%;
+    color: #8a1538;
   }
 
-  .messi {
-    opacity: 0;
+  .register input:focus {
+    border: 1px solid rgba(249, 249, 249, 0.3);
   }
 
-  .info {
-    width: 90%;
-  }
+  /*---- GAME -----*/
 
-  .header div a {
-    position: absolute;
-    translate: -1000px;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .header2 div a {
-    position: absolute;
-    translate: -1000px;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .redirect {
-    position: absolute;
-    right: 5%;
-    top: 10%;
-    text-align: center;
-  }
-
-  .timer2 {
-    left: 13%;
-    bottom: 50px;
-  }
-
-  .groups {
-    padding: 0;
-    height: 60vh;
+  .game {
+    min-height: 500vh;
+    width: 100%;
+    background: #eeeee4;
     display: flex;
     justify-content: center;
     align-items: center;
+    column-gap: 100px;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 100px;
+  }
+
+  .game h2 {
+    position: absolute;
+    top: -20px;
+    color: #00c6ae;
+    font-size: 48px;
+  }
+
+  /*---- GRUPOS ----*/
+
+  .game_groups {
+    background: #00c6ae;
+    height: 320px;
+    width: 280px;
+    display: flex;
     flex-direction: column;
+    text-align: center;
+    padding: 0 16px;
+    color: #550065;
+    border: 1px solid #550065;
+    margin-bottom: 10px;
   }
 
-  .groups div {
-    translate: 0;
-    height: 190px;
-    width: 350px;
-    background: url(../public/img/grupos.jpg);
-    background-size: cover;
+  .game_groups div {
+    display: flex;
+    margin: 5px 0;
+    padding: 8px;
+    background: #550065;
+    border-radius: 5px;
+    gap: 10px;
+    align-items: center;
+    color: #eeeee4;
   }
 
-  .people {
+  .game_groups img {
+    height: 30px;
+    border: 1px solid #d4c164;
+  }
+
+  .game_groups p {
+    margin: 0;
+  }
+
+  .game_groups h4 {
+    font-family: QatarBold;
+    font-size: 20px;
+  }
+
+  .game_groups div h4 {
+    margin: 0;
+    font-size: 19px;
+    color: #d4c164;
+  }
+
+  /*---- PREDICTS ----*/
+
+  .result {
+    height: 320px;
+    width: 700px;
+    position: relative;
+    display: flex;
+    column-gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .result .result_cont {
+    width: 33%;
+    height: 100%;
+    margin-bottom: 5px;
+    background: #550065;
+    border: 1px solid #00c6ae;
+    display: flex;
     flex-direction: column;
-    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #ff4700;
+    font-size: 20px;
+    font-family: QatarBold;
   }
 
-  .people img {
-    margin-top: -80px;
-    height: 40%;
+  .result div .form {
+    display: flex;
+    gap: 8px;
+    align-items: center;
   }
 
-  .people h2 {
-    margin-bottom: -50px;
+  .result input {
+    background: #00c6ae;
+    border: 0;
+    text-align: center;
+    font-size: 16px;
+    width: 30px;
+    color: #550065;
+    font-family: QatarBold;
   }
 
-  .register {
-    height: 100vh;
+  .result img {
+    height: 30px;
+    border: 1px solid #d4c164;
   }
 
-  .register_container {
-    width: 80%;
-    height: 500px;
+  /*---- PLAYOFFS ----*/
+
+  .playoffs {
+    width: 100%;
+    height: 125vh;
+    padding: 50px;
+    display: flex;
+    column-gap: 45px;
   }
 
-}
+  /*---- OCTAVOS ----*/
+
+  .eighths,
+  .quarter {
+    width: 22%;
+  }
+
+  .eighths h3,
+  .quarter h3,
+  .semifinal h3,
+  .final h3 {
+    font-size: 32px;
+    color: #550065;
+    text-align: center;
+  }
+
+  /*---- CUARTOS ----*/
+
+  .quarter .playoffs_groups div p {
+    margin: 3px 0;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .quarter .playoffs_groups {
+    margin: 28% 0;
+  }
+
+  /*---- SEMI ----*/
+
+  .semifinal {
+    width: 23%;
+  }
+
+  .semifinal .playoffs_groups div p {
+    font-size: 12px;
+  }
+
+  .semifinal .playoffs_groups {
+    white-space: nowrap;
+  }
+
+  .semifinal .playoffs_groups {
+    margin: 62% 0;
+  }
+
+  /*---- FINAL ----*/
+
+  .final {
+    width: 23%;
+  }
+
+  .final .playoffs_groups {
+    height: 12%;
+    margin: 100% 0;
+  }
+
+  .playoffs_groups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    color: #550065;
+    background: #00c6ae;
+    border: 1px solid #550065;
+    margin-bottom: 10px;
+  }
+
+  .playoffs_groups div p {
+    margin: 0;
+    text-align: center;
+  }
+
+  .playoffs_groups input {
+    background: #d4c164;
+    border: 0;
+    text-align: center;
+    font-size: 16px;
+    width: 35px;
+    height: 25px;
+    color: #550065;
+    font-family: QatarBold;
+  }
+
+  .playoffs_groups img {
+    height: 30px;
+    border: 1px solid #d4c164;
+  }
+
+  /*---- RESPONSIVE PARA CELULAR ROTADO ----*/
+
+  @media only screen and (max-height:500px) {
+
+    .header {
+      height: 17vh;
+    }
+
+    .header2 {
+      height: 17vh;
+    }
+
+    .groups {
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .redirect {
+      position: absolute;
+      right: 5%;
+      top: 10%;
+      text-align: center;
+    }
+
+    .redirect h1 {
+      margin-bottom: 0;
+    }
+
+    .groups div {
+      translate: 0;
+      height: 230px;
+      width: 425px;
+      background: url(../public/img/grupos.jpg);
+      background-size: cover;
+    }
+
+    .people {
+      height: 90vh;
+      gap: 50px;
+    }
+
+    .people h2 {
+      font-size: 40px;
+      margin-bottom: -50px;
+    }
+
+    .people img {
+      height: 85%;
+      margin-right: 50px;
+    }
+
+    .register {
+      height: 100vh;
+    }
+
+    .register_container {
+      width: 60%;
+      height: 360px;
+    }
+
+    .register_container img {
+      object-fit: cover;
+      width: 100%;
+      height: 20%;
+      border-bottom: 1px solid #8a1538;
+    }
+
+  }
+
+  /*---- RESPONSIVE PARA CELULAR NORMAL ----*/
+
+  @media only screen and (max-width:550px) {
+
+    .entry {
+      height: 100vh;
+    }
+
+    .messi {
+      opacity: 0;
+    }
+
+    .info {
+      width: 90%;
+    }
+
+    .header div a {
+      position: absolute;
+      translate: -1000px;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .header2 div a {
+      position: absolute;
+      translate: -1000px;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .redirect {
+      position: absolute;
+      right: 5%;
+      top: 10%;
+      text-align: center;
+    }
+
+    .timer2 {
+      left: 13%;
+      bottom: 50px;
+    }
+
+    .groups {
+      padding: 0;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .groups div {
+      translate: 0;
+      height: 190px;
+      width: 350px;
+      background: url(../public/img/grupos.jpg);
+      background-size: cover;
+    }
+
+    .people {
+      flex-direction: column;
+      height: 90vh;
+    }
+
+    .people img {
+      margin-top: -80px;
+      height: 40%;
+    }
+
+    .people h2 {
+      margin-bottom: -50px;
+    }
+
+    .register {
+      height: 100vh;
+    }
+
+    .register_container {
+      width: 80%;
+      height: 500px;
+    }
+
+    .playoffs {
+      height: 180vh;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .eighths,
+    .quarter {
+      width: 90%;
+    }
+
+    .semifinal {
+      width: 95%;
+    }
+
+    .final {
+      width: 99%;
+    }
+
+    .quarter .playoffs_groups,
+    .semifinal .playoffs_groups,
+    .final .playoffs_groups {
+      margin: 2% 0;
+    }
+
+    .final .playoffs_groups {
+      height: 40%;
+    }
+
+  }
