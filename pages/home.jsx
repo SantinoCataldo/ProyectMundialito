@@ -4,14 +4,23 @@ import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 import Timer from '../components/timer2';
 import Nav from '../components/nav';
+import {getSession} from 'next-auth/react'
 
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
-    // SCROLL //
+    const [user, setUser] = useState(null);
 
-    
+    useEffect(() => {
+        (async () => {
+          const session = await getSession()
+          console.log(session.user)
+          setUser(session.user)
+        })();
+      }, [])
+
+    // SCROLL //
 
     return (
         <div className={styles.container}>

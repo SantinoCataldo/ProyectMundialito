@@ -4,7 +4,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 import styles from '../styles/Home.module.css'
-import Timer from '../components/timer';
+import Timer from '../components/timer'
+
 
 
 export default function Home() {
