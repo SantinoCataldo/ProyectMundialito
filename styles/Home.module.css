@@ -567,7 +567,7 @@
   }
 
   .result input {
-    background: #00c6ae;
+    background: #d4c164;
     border: 0;
     text-align: center;
     font-size: 16px;
@@ -665,13 +665,13 @@
   }
 
   .playoffs_groups input {
-    background: #d4c164;
+    background: #550065;
     border: 0;
     text-align: center;
     font-size: 16px;
     width: 35px;
     height: 25px;
-    color: #550065;
+    color: #d4c164;
     font-family: QatarBold;
   }
 

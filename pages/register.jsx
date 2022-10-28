@@ -20,7 +20,7 @@ export default function Register() {
             <section className={styles.register} id="register">
                 <div className={styles.register_container}>
                     <img src="/img/copa.jpg" alt="" />
-                    <h2>Ingreso</h2>
+                    <h2>Registro</h2>
                     <form action="">
                         <p>Correo</p>
                         <input type="email" name="email" required />
