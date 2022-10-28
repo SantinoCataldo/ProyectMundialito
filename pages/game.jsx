@@ -2,6 +2,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
+import Timer from '../components/timer2';
+import Nav from '../components/nav2';
 
 import styles from '../styles/Home.module.css'
 
@@ -23,42 +25,6 @@ export default function Game() {
         window.addEventListener("scroll", changeHeader);
     }, []);
 
-    //RELOJ//
-
-    const [TimerDays, setTimerDays] = useState('00');
-    const [TimerHours, setTimerHours] = useState('00');
-    const [TimerMinutes, setTimerMinutes] = useState('00');
-
-    let interval = useRef();
-
-    const starTimer = () => {
-        const countDownDate = new Date('Nov 20 2022 13:00:00').getTime();
-
-        interval = setInterval(() => {
-            const now = new Date().getTime();
-            const distance = countDownDate - now;
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-            if (distance <= 0) {
-                clearInterval(interval.current);
-            } else {
-                setTimerDays(days);
-                setTimerHours(hours);
-                setTimerMinutes(minutes);
-            };
-        }, 1000);
-    };
-
-    useEffect(() => {
-        starTimer();
-        return () => {
-            clearInterval(interval)
-        }
-    });
-
     return (
         <div className={styles.container}>
             <Head>
@@ -70,39 +36,10 @@ export default function Game() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <section className={styles.body}>
-                <header className={header ? styles.header2 : styles.header}>
-                    <div>
-                        <div className={styles.logo1}></div>
-                        <h4>World Proyect</h4>
-                    </div>
-                    <div>
-                        <a href="#info">Infromacion</a>
-                        <Image src="/img/rombo.jpg" alt="Rombo" width={8} height={8} />
-                        <a href="#groups">Fase de Grupos</a>
-                        <Image src="/img/rombo.jpg" alt="Rombo" width={8} height={8} />
-                        <a href="#people">Personas</a>
-                    </div>
-                    <a href="#"><button>Cerrar Sesion</button></a>
-                </header>
+            <Nav />
 
-                <section className={styles.cont}>
-             
-                    <div className={styles.timer2}>
-                        <div>
-                            <h4>{TimerDays}</h4>
-                            <p>Dias</p>
-                        </div>
-                        <Image src="/img/rombo.jpg" alt="Rombo" width={8} height={8} />
-                        <div>
-                            <h4>{TimerHours}</h4>
-                            <p>Horas</p>
-                        </div>
-                        <Image src="/img/rombo.jpg" alt="Rombo" width={8} height={8} />
-                        <div>
-                            <h4>{TimerMinutes}</h4>
-                            <p>Min</p>
-                        </div>
-                    </div>
+                <section className={styles.cont}>         
+                    <Timer />
                     <div className={styles.redirect}>
                         <h1>World Proyect</h1>
                         <h2>Game</h2>
@@ -110,7 +47,7 @@ export default function Game() {
                 </section>
 
                 <form className={styles.game} action="">
-                    <h2>COMIENZA EL JUEGO</h2>
+                    <h2 id="groups">COMIENZA EL JUEGO</h2>
 
                     {/* GRUPO A */}
                     <div className={styles.game_groups}>
@@ -779,7 +716,230 @@ export default function Game() {
                             </div>
                         </div>
                     </div>
-                    {/* <a href="#register"><button className={styles.button}>Enviar</button></a> */}
+                    <div id="playoffs" className={styles.playoffs}>
+                        <div className={styles.eighths}>
+                            <h3>Octavos</h3>
+                            <div className={styles.playoffs_groups}>
+                                <div>
+                                    <p>1°A</p>
+                                    <img src="/img/selections/GHA.jpg" alt="" />
+                                </div>
+                                <input type="number" min="0" max="9" required />
+                                <p>-</p>
+                                <input type="number" min="0" max="9" required />
+                                <div>
+                                    <p>2°B</p>
+                                    <img src="/img/selections/URU.jpg" alt="" />
+                                </div>
+                            </div>
+
+                            <div className={styles.playoffs_groups}>
+                                <div>
+                                    <p>1°C</p>
+                                    <img src="/img/selections/GHA.jpg" alt="" />
+                                </div>
+                                <input type="number" min="0" max="9" required />
+                                <p>-</p>
+                                <input type="number" min="0" max="9" required />
+                                <div>
+                                    <p>2°D</p>
+                                    <img src="/img/selections/URU.jpg" alt="" />
+                                </div>
+                            </div>
+
+                            <div className={styles.playoffs_groups}>
+                                <div>
+                                    <p>1°E</p>
+                                    <img src="/img/selections/GHA.jpg" alt="" />
+                                </div>
+                                <input type="number" min="0" max="9" required />
+                                <p>-</p>
+                                <input type="number" min="0" max="9" required />
+                                <div>
+                                    <p>2°F</p>
+                                    <img src="/img/selections/URU.jpg" alt="" />
+                                </div>
+                            </div>
+
+                            <div className={styles.playoffs_groups}>
+                                <div>
+                                    <p>1°G</p>
+                                    <img src="/img/selections/GHA.jpg" alt="" />
+                                </div>
+                                <input type="number" min="0" max="9" required />
+                                <p>-</p>
+                                <input type="number" min="0" max="9" required />
+                                <div>
+                                    <p>2°H</p>
+                                    <img src="/img/selections/URU.jpg" alt="" />
+                                </div>
+                            </div>
+
+                            <div className={styles.playoffs_groups}>
+                                <div>
+                                    <p>1°B</p>
+                                    <img src="/img/selections/GHA.jpg" alt="" />
+                                </div>
+                                <input type="number" min="0" max="9" required />
+                                <p>-</p>
+                                <input type="number" min="0" max="9" required />
+                                <div>
+                                    <p>2°A</p>
+                                    <img src="/img/selections/URU.jpg" alt="" />
+                                </div>
+                            </div>
+
+                            <div className={styles.playoffs_groups}>
+                                <div>
+                                    <p>1°D</p>
+                                    <img src="/img/selections/GHA.jpg" alt="" />
+                                </div>
+                                <input type="number" min="0" max="9" required />
+                                <p>-</p>
+                                <input type="number" min="0" max="9" required />
+                                <div>
+                                    <p>2°C</p>
+                                    <img src="/img/selections/URU.jpg" alt="" />
+                                </div>
+                            </div>
+
+                            <div className={styles.playoffs_groups}>
+                                <div>
+                                    <p>1°F</p>
+                                    <img src="/img/selections/GHA.jpg" alt="" />
+                                </div>
+                                <input type="number" min="0" max="9" required />
+                                <p>-</p>
+                                <input type="number" min="0" max="9" required />
+                                <div>
+                                    <p>2°E</p>
+                                    <img src="/img/selections/URU.jpg" alt="" />
+                                </div>
+                            </div>
+
+                            <div className={styles.playoffs_groups}>
+                                <div>
+                                    <p>1°H</p>
+                                    <img src="/img/selections/GHA.jpg" alt="" />
+                                </div>
+                                <input type="number" min="0" max="9" required />
+                                <p>-</p>
+                                <input type="number" min="0" max="9" required />
+                                <div>
+                                    <p>2°G</p>
+                                    <img src="/img/selections/URU.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={styles.quarter}>
+                            <h3>Cuartos</h3>
+                            <div className={styles.playoffs_groups}>
+                                <div>
+                                    <p>1°A/2°B</p>
+                                    <img src="/img/selections/GHA.jpg" alt="" />
+                                </div>
+                                <input type="number" min="0" max="9" required />
+                                <p>-</p>
+                                <input type="number" min="0" max="9" required />
+                                <div>
+                                    <p>1°C/2°D</p>
+                                    <img src="/img/selections/URU.jpg" alt="" />
+                                </div>
+                            </div>
+
+                            <div className={styles.playoffs_groups}>
+                                <div>
+                                    <p>1°E/2°F</p>
+                                    <img src="/img/selections/GHA.jpg" alt="" />
+                                </div>
+                                <input type="number" min="0" max="9" required />
+                                <p>-</p>
+                                <input type="number" min="0" max="9" required />
+                                <div>
+                                    <p>1°G/2°H</p>
+                                    <img src="/img/selections/URU.jpg" alt="" />
+                                </div>
+                            </div>
+
+                            <div className={styles.playoffs_groups}>
+                                <div>
+                                    <p>1°B/2°A</p>
+                                    <img src="/img/selections/GHA.jpg" alt="" />
+                                </div>
+                                <input type="number" min="0" max="9" required />
+                                <p>-</p>
+                                <input type="number" min="0" max="9" required />
+                                <div>
+                                    <p>1°D/2°C</p>
+                                    <img src="/img/selections/URU.jpg" alt="" />
+                                </div>
+                            </div>
+
+                            <div className={styles.playoffs_groups}>
+                                <div>
+                                    <p>1°F/2°E</p>
+                                    <img src="/img/selections/GHA.jpg" alt="" />
+                                </div>
+                                <input type="number" min="0" max="9" required />
+                                <p>-</p>
+                                <input type="number" min="0" max="9" required />
+                                <div>
+                                    <p>1°H/2°G</p>
+                                    <img src="/img/selections/URU.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={styles.semifinal}>
+                            <h3>Semifinal</h3>
+                            <div className={styles.playoffs_groups}>
+                                <div>
+                                    <p>Cuartos 1</p>
+                                    <img src="/img/selections/GHA.jpg" alt="" />
+                                </div>
+                                <input type="number" min="0" max="9" required />
+                                <p>-</p>
+                                <input type="number" min="0" max="9" required />
+                                <div>
+                                    <p>Cuartos 2</p>
+                                    <img src="/img/selections/URU.jpg" alt="" />
+                                </div>
+                            </div>
+
+                            <div className={styles.playoffs_groups}>
+                                <div>
+                                    <p>Cuartos 3</p>
+                                    <img src="/img/selections/GHA.jpg" alt="" />
+                                </div>
+                                <input type="number" min="0" max="9" required />
+                                <p>-</p>
+                                <input type="number" min="0" max="9" required />
+                                <div>
+                                    <p>Cuartos 4</p>
+                                    <img src="/img/selections/URU.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={styles.final}>
+                            <h3>Final</h3>
+                            <div className={styles.playoffs_groups}>
+                                <div>
+                                    <p>Semi 1</p>
+                                    <img src="/img/selections/GHA.jpg" alt="" />
+                                </div>
+                                <input type="number" min="0" max="9" required />
+                                <p>-</p>
+                                <input type="number" min="0" max="9" required />
+                                <div>
+                                    <p>Semi 2</p>
+                                    <img src="/img/selections/URU.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#register"><button className={styles.button}>Enviar</button></a> 
                 </form>
 
             </section>

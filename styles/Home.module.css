@@ -122,7 +122,7 @@
   font-size: 14px;
   color: #eeeee4;
   position: fixed;
-  transition: 1s;
+  transition: .6s;
   border-bottom: 1px solid #eeeee4;
 }
 
@@ -138,7 +138,7 @@
   width: 110px;
   background: url(../public/img/logo2.jpg);
   background-size: cover;
-  transition: 1s;
+  transition: .6s;
 }
 
 .header div h4 {
@@ -187,7 +187,7 @@
   font-size: 14px;
   color: #8a1538;
   position: fixed;
-  transition: 1s;
+  transition: .6s;
   border-bottom: 1px solid #8a1538;
 }
 
@@ -203,7 +203,7 @@
   width: 105px;
   background: url(../public/img/logo.jpg);
   background-size: cover;
-  transition: 1s;
+  transition: .6s;
 }
 
 .header2 div h4 {
@@ -236,6 +236,71 @@
 }
 
 .header2 button:hover {
+  scale: 1.05;
+}
+
+/*---- HEADER3 ----*/
+
+.header3 {
+  z-index: 100;
+  background: #eeeee4;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #550065;
+  position: fixed;
+  transition: .6s;
+  border-bottom: 1px solid #550065;
+}
+
+.header3 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.header3 .logo1 {
+  height: 52px;
+  width: 105px;
+  background: url(../public/img/logo.jpg);
+  background-size: cover;
+  transition: .6s;
+}
+
+.header3 div h4 {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.header3 div a {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.header3 div a:hover {
+  color: #00c6ae;
+}
+
+.header3 button {
+  padding: 9px 10px;
+  border: 0;
+  font-size: 14px;
+  clip-path: polygon(15% 25%, 85% 25%, 100% 50%, 85% 75%, 15% 75%, 0% 50%);
+  background: #ff4700;
+  padding: 30px 20px;
+  margin-right: 10px;
+  color: #eeeee4;
+  transition: .3s;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.header3 button:hover {
   scale: 1.05;
 }
 
@@ -372,7 +437,7 @@
 }
 
 .register_container {
-  height: 80%;
+  height: 500px;
   width: 25%;
   border: 1px solid #8a1538;
   text-align: center;
@@ -417,7 +482,7 @@
 
 .game h2 {
   position: absolute;
-  top: -10px;
+  top: -20px;
   color: #00c6ae;
   font-size: 48px;
 }
@@ -433,7 +498,8 @@
   text-align: center;
   padding: 0 16px;
   color: #550065;
- border: 1px solid #550065;
+  border: 1px solid #550065;
+  margin-bottom: 10px;
 }
 
 .game_groups div {
@@ -475,6 +541,7 @@
   position: relative;
   display: flex;
   column-gap: 5px;
+  margin-bottom: 10px;
 }
 
 .result .result_cont {
@@ -500,19 +567,115 @@
 }
 
 .result input {
-  background: #d4c164;
+  background: #00c6ae;
   border: 0;
   text-align: center;
   font-size: 16px;
-}
-
-.result input {
   width: 30px;
-  color: #8a1538;
+  color: #550065;
   font-family: QatarBold;
 }
 
 .result img {
+  height: 30px;
+  border: 1px solid #d4c164;
+}
+
+/*---- PLAYOFFS ----*/
+
+.playoffs {
+  width: 100%;
+  height: 125vh;
+  padding: 50px;
+  display: flex;
+  column-gap: 45px;
+}
+
+/*---- OCTAVOS ----*/
+
+.eighths,
+.quarter {
+  width: 22%;
+}
+
+.eighths h3 ,
+.quarter h3,
+.semifinal h3,
+.final h3 {
+  font-size: 32px;
+  color: #550065;
+  text-align: center;
+}
+
+/*---- CUARTOS ----*/
+
+.quarter .playoffs_groups div p{
+  margin: 3px 0;
+  font-size: 13px;
+  text-align: center;
+}
+
+.quarter .playoffs_groups{
+  margin: 28% 0;
+}
+
+/*---- SEMI ----*/
+
+.semifinal {
+  width: 23%;
+}
+
+.semifinal .playoffs_groups div p {
+  font-size: 12px;
+}
+
+.semifinal .playoffs_groups {
+  white-space: nowrap;
+}
+
+.semifinal .playoffs_groups{
+  margin: 62% 0;
+}
+
+/*---- FINAL ----*/
+
+.final {
+  width: 23%;
+}
+
+.final .playoffs_groups{
+  height: 12%;
+  margin: 100% 0;
+}
+
+.playoffs_groups {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  color: #550065;
+  background: #00c6ae;
+  border: 1px solid #550065;
+  margin-bottom: 10px;
+}
+
+.playoffs_groups div p{
+  margin: 0;
+  text-align: center;
+}
+
+.playoffs_groups input {
+  background: #d4c164;
+  border: 0;
+  text-align: center;
+  font-size: 16px;
+  width: 35px;
+  height: 25px;
+  color: #550065;
+  font-family: QatarBold;
+}
+
+.playoffs_groups img {
   height: 30px;
   border: 1px solid #d4c164;
 }
@@ -570,6 +733,22 @@
   .people img {
     height: 85%;
     margin-right: 50px;
+  }
+
+  .register {
+    height: 100vh;
+  }
+
+  .register_container {
+    width: 60%;
+    height: 360px;
+  }
+
+  .register_container img {
+    object-fit: cover;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid #8a1538;
   }
 
 }
@@ -648,12 +827,12 @@
   }
 
   .register {
-    height: 90vh;
+    height: 100vh;
   }
 
   .register_container {
     width: 80%;
-    height: 65%;
+    height: 500px;
   }
 
 }
