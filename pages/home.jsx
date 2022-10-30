@@ -20,8 +20,6 @@ export default function Home() {
         })();
       }, [])
 
-    // SCROLL //
-
     return (
         <div className={styles.container}>
             <Head>
