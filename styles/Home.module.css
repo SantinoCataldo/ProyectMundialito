@@ -40,7 +40,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background: url(../public/img/copa.jpg); */
     background: #eeeee4;
     background-size: cover;
     color: #8a1538;
@@ -317,7 +316,7 @@
   .cont .video video {
     position: absolute;
     z-index: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
   }
@@ -684,11 +683,33 @@
 
   @media only screen and (max-height:500px) {
 
-    .header {
-      height: 17vh;
+    .messi {
+      opacity: 0;
     }
 
-    .header2 {
+    .entry h1 {
+      margin: 0px;
+      font-family: QatarBold;
+      color: #8a1538;
+      text-align: center;
+    }
+  
+    .entry .button {
+      margin: -30px;
+    }
+
+    .logo {
+      opacity: 0;
+    }
+
+    .info {
+      margin-top: 0px;
+      width: 80%;
+    }
+
+    .header,
+    .header2,
+    .header3 {
       height: 17vh;
     }
 
@@ -751,6 +772,35 @@
       border-bottom: 1px solid #8a1538;
     }
 
+    .playoffs {
+      height: 440vh;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .eighths,
+    .quarter {
+      width: 90%;
+    }
+
+    .semifinal {
+      width: 95%;
+    }
+
+    .final {
+      width: 99%;
+    }
+
+    .quarter .playoffs_groups,
+    .semifinal .playoffs_groups,
+    .final .playoffs_groups {
+      margin: 2% 0;
+    }
+
+    .final .playoffs_groups {
+      height: 40%;
+    }
+
   }
 
   /*---- RESPONSIVE PARA CELULAR NORMAL ----*/
@@ -769,14 +819,9 @@
       width: 90%;
     }
 
-    .header div a {
-      position: absolute;
-      translate: -1000px;
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    .header2 div a {
+    .header div a,
+    .header2 div a,
+    .header3 div a {
       position: absolute;
       translate: -1000px;
       opacity: 0;
@@ -812,6 +857,18 @@
       background-size: cover;
     }
 
+    .game {
+      padding-top: 120px;
+    }
+
+    .game h2 {
+      position: absolute;
+      top: -20px;
+      text-align: center;
+      color: #00c6ae;
+      font-size: 42px;
+    }
+
     .people {
       flex-direction: column;
       height: 90vh;
@@ -836,9 +893,20 @@
     }
 
     .playoffs {
-      height: 180vh;
+      height: 190vh;
       flex-direction: column;
       align-items: center;
+    }
+
+    .result {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 395px;
+    }
+  
+    .result .result_cont {
+      width: 280px;
     }
 
     .eighths,
