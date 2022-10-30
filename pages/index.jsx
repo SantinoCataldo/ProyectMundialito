@@ -4,7 +4,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 import styles from '../styles/Home.module.css'
-import Timer from '../components/timer';
+import Timer from '../components/timer'
+
 
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
         </div>
         <div className={styles.messi}></div>
         <h1>World Proyect</h1>
-        <a href="/home"><button className={styles.button}>Ingresar</button></a>
+        <a href="/home"><button className={styles.button}>Empezar</button></a>
         <Timer />
         <div className={styles.info}>
           <p>En esta y las siguientes paginas vas a poder participar de un juego, el cual va a tener un premio monetario el cual vas a poder tener, si hacertas todos los goles del mundial de futbol Qatar 2022</p>
