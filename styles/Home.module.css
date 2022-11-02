@@ -154,6 +154,7 @@
   .header div div button {
     margin: 0;
     font-size: 14px;
+    cursor: auto;
     background: #eeeee4;
     color: #8a1538;
   }
@@ -180,7 +181,7 @@
     clip-path: polygon(15% 25%, 85% 25%, 100% 50%, 85% 75%, 15% 75%, 0% 50%);
     background: #8a1538;
     padding: 30px 20px;
-    margin: 10px;
+    margin: 0 10px;
     color: #eeeee4;
     transition: .3s;
     cursor: pointer;
@@ -215,6 +216,25 @@
     margin-left: 10px;
   }
 
+  .header2 div div {
+    display: flex;
+  }
+
+  .header2 div div img {
+    height: 53px;
+    border-radius: 50%;
+    outline: 2px solid #8a1538;
+    margin: 0 10px 0 0;
+  }
+
+  .header2 div div button {
+    margin: 0;
+    cursor: auto;
+    font-size: 14px;
+    background: #d4c164;
+    color: #8a1538;
+  }
+
   .header2 .logo1 {
     height: 52px;
     width: 105px;
@@ -245,6 +265,7 @@
     clip-path: polygon(15% 25%, 85% 25%, 100% 50%, 85% 75%, 15% 75%, 0% 50%);
     background: #8a1538;
     padding: 30px 20px;
+    margin: 0 10px;
     margin-right: 10px;
     color: #eeeee4;
     transition: .3s;
@@ -280,22 +301,6 @@
     margin-left: 10px;
   }
 
-  .header2 div div {
-    display: flex;
-  }
-
-  .header2 div div h2 {
-    margin: 0 6px;
-  }
-
-  .header2 div div img {
-    height: 55px;
-    border-radius: 50%;
-    border: 1px solid #d4c164;
-  }
-
-  /*---- HEADER3 ----*/
-
   .header3 .logo1 {
     height: 52px;
     width: 105px;
@@ -324,8 +329,9 @@
     border: 0;
     font-size: 14px;
     clip-path: polygon(15% 25%, 85% 25%, 100% 50%, 85% 75%, 15% 75%, 0% 50%);
-    background: #ff4700;
+    background: #00c6ae;
     padding: 30px 20px;
+    margin: 0 10px;
     margin-right: 10px;
     color: #eeeee4;
     transition: .3s;
@@ -341,14 +347,19 @@
     display: flex;
   }
 
-  .header3 div div h2 {
-    margin: 0 6px;
+  .header3 div div img {
+    height: 53px;
+    border-radius: 50%;
+    outline: 2px solid #550065;
+    margin: 0 10px 0 0;
   }
 
-  .header3 div div img {
-    height: 55px;
-    border-radius: 50%;
-    border: 1px solid #ff4700;
+  .header3 div div button {
+    margin: 0;
+    cursor: auto;
+    font-size: 14px;
+    background: #d4c164;
+    color: #550065;
   }
 
   /* ¿¿¿cont??? */
