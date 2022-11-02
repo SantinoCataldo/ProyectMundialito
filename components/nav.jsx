@@ -7,13 +7,14 @@ import styles from '../styles/Home.module.css'
 
 export default function Nav() {
     const { data: session } = useSession();
-    const { push } = useRouter();
+    const { push, asPath} = useRouter();
 
 
     const handleSignOut = async () => {
         const data = await signOut({ redirect: false, callbackUrl: '/home' });
         push(data.url);
     }
+    const handleSignIn = async () => push(`/auth/login?callbackUrl=${asPath}`);
 
     const [header, setHeader] = useState(false);
 
@@ -42,7 +43,7 @@ export default function Nav() {
                 <Image src="/img/rombo.jpg" alt="Rombo" width={8} height={8} />
                 <a href="#people">Personas</a>
                 <Image src="/img/rombo.jpg" alt="Rombo" width={8} height={8} />
-                {session ? <button onClick={handleSignOut}>Cerrar Sesion</button> : <button>Iniciar Sesion</button>}
+                {session ? <button onClick={handleSignOut}>Cerrar Sesion</button> : <button onClick={handleSignIn}>Iniciar Sesion</button>}
             </div>
 
         </header>
