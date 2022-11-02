@@ -1,17 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import { useEffect, useRef, useState } from 'react'
-import {useSession, signIn, signOut} from 'next-auth/react'
-import {useRouter} from 'next/router'
+import { useSession, signIn, signOut } from 'next-auth/react'
+import { useRouter } from 'next/router'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Nav() {
-    const {data: session} = useSession();
-    const {push} = useRouter();
+    const { data: session } = useSession();
+    const { push } = useRouter();
 
 
     const handleSignOut = async () => {
-        const data = await signOut({redirect: false, callbackUrl: '/home'});
+        const data = await signOut({ redirect: false, callbackUrl: '/home' });
         push(data.url);
     }
 
@@ -31,21 +31,21 @@ export default function Nav() {
 
     return (
         <header className={header ? styles.header2 : styles.header}>
-                    <div>
-                        <div className={styles.logo1}></div>
-                        <h4>World Proyect</h4>
-                    </div>
-                    <div>
-                        <a href="#info">Informacion</a>
-                        <Image src="/img/rombo.jpg" alt="Rombo" width={8} height={8} />
-                        <a href="#groups">Fase de Grupos</a>
-                        <Image src="/img/rombo.jpg" alt="Rombo" width={8} height={8} />
-                        <a href="#people">Personas</a>
-                        <Image src="/img/rombo.jpg" alt="Rombo" width={8} height={8} />
-                        {session ? <div><h2>{session.user.name}</h2><img src={session.user.image} alt="Imagen-Usuario"></img><a href=""><button onClick={handleSignOut}>Cerrar Sesion</button></a></div> : <a href="#"><button>Iniciar Sesion</button></a>}                  
-                    </div>
+            <div>
+            {session ? <div><img src={session.user.image} alt="Imagen-Usuario"></img><button>{session.user.name}</button></div> : <div></div>}
+                <h4>World Proyect</h4>
+            </div>
+            <div>
+                <a href="#info">Informacion</a>
+                <Image src="/img/rombo.jpg" alt="Rombo" width={8} height={8} />
+                <a href="#groups">Fase de Grupos</a>
+                <Image src="/img/rombo.jpg" alt="Rombo" width={8} height={8} />
+                <a href="#people">Personas</a>
+                <Image src="/img/rombo.jpg" alt="Rombo" width={8} height={8} />
+                {session ? <button onClick={handleSignOut}>Cerrar Sesion</button> : <button>Iniciar Sesion</button>}
+            </div>
 
-                </header>
+        </header>
     )
 
 }
