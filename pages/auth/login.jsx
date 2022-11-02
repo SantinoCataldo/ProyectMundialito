@@ -1,5 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
+import Head from 'next/head';
 import { useRouter } from "next/router";
+import styles from '../../styles/Home.module.css';
 import {
   Box,
   Button,
@@ -34,7 +37,7 @@ const providers = [
 const Signin = () => {
   const { data: session, status } = useSession();
   const { push } = useRouter();
-  const [ email, setEmail ] = useState('');
+  const [email, setEmail] = useState('');
 
   if (status === "loading")
     return <Heading>Checking Authentication ...</Heading>;
@@ -51,34 +54,45 @@ const Signin = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    if(!email) return false
+    if (!email) return false
 
     signIn('email', { email, redirect: false })
   }
 
   return (
-    <Box>
-      <chakra.form onSubmit={handleSubmit}>
-        <formLabel>Email Address</formLabel>
-        <Input type='email' onChange={e => setEmail(e.target.value)}/>
+    <Box className={styles.register}>
+      <Head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login | World Proyect</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div className={styles.register_container}>
+      <img src="/img/copa.jpg" alt="" />
+      <h2>Login</h2>
+        <chakra.form onSubmit={handleSubmit}>
+          <formLabel>Email Address</formLabel>
+          <Input type='email' onChange={e => setEmail(e.target.value)} />
 
-        <Button type='submit' w='100%' my={5}>
-          Login
-        </Button>
-      </chakra.form>
-      <VStack>
-        {providers.map(({ name, Icon }) => (
-          <Button
-            key={name}
-            leftIcon={<Icon />}
-            onClick={handleOAuthSignIn(name)}
-            textTransform="uppercase"
-            w="100%"
-          >
-            Sign in with {name}
+          <Button type='submit' w='40%' my={5}>
+            Login
           </Button>
-        ))}
-      </VStack>
+        </chakra.form>
+        <VStack>
+          {providers.map(({ name, Icon }) => (
+            <Button
+              key={name}
+              leftIcon={<Icon />}
+              onClick={handleOAuthSignIn(name)}
+              textTransform="uppercase"
+              w="70%"
+            >
+              Sign in with {name}
+            </Button>
+          ))}
+        </VStack>
+      </div>
     </Box>
   );
 };

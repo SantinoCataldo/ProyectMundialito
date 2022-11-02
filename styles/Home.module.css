@@ -277,95 +277,10 @@
     scale: 1.05;
   }
 
-  /*---- HEADER3 ----*/
-
-  .header3 {
-    z-index: 100;
-    background: #eeeee4;
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-    color: #550065;
-    position: fixed;
-    transition: .6s;
-    border-bottom: 1px solid #550065;
-  }
-
-  .header3 div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-  }
-
-  .header3 .logo1 {
-    height: 52px;
-    width: 105px;
-    background: url(../public/img/logo.jpg);
-    background-size: cover;
-    transition: .6s;
-  }
-
-  .header3 div h4 {
-    margin-left: 20px;
-    font-size: 16px;
-  }
-
-  .header3 div a {
-    margin: 0 10px;
-    cursor: pointer;
-    transition: .4s;
-  }
-
-  .header3 div a:hover {
-    color: #00c6ae;
-  }
-
-  .header3 button {
-    padding: 9px 10px;
-    border: 0;
-    font-size: 14px;
-    clip-path: polygon(15% 25%, 85% 25%, 100% 50%, 85% 75%, 15% 75%, 0% 50%);
-    background: #00c6ae;
-    padding: 30px 20px;
-    margin: 0 10px;
-    margin-right: 10px;
-    color: #eeeee4;
-    transition: .3s;
-    cursor: pointer;
-    letter-spacing: 1px;
-  }
-
-  .header3 button:hover {
-    scale: 1.05;
-  }
-
-  .header3 div div {
-    display: flex;
-  }
-
-  .header3 div div img {
-    height: 53px;
-    border-radius: 50%;
-    outline: 2px solid #550065;
-    margin: 0 10px 0 0;
-  }
-
-  .header3 div div button {
-    margin: 0;
-    cursor: auto;
-    font-size: 14px;
-    background: #d4c164;
-    color: #550065;
-  }
-
   /* ¿¿¿cont??? */
 
   .cont {
-    background: #550065;
+    background: #8a1538;
     height: 100vh;
     width: 100%;
     color: #eeeee4;
@@ -514,7 +429,8 @@
     border-bottom: 1px solid #8a1538;
     background: #eeeee4;
     font-size: 14px;
-    padding: 10px 0 0;
+    padding: 10px 10px 0;
+    margin-bottom: 30px;
     width: 80%;
     color: #8a1538;
   }
@@ -606,14 +522,14 @@
     width: 33%;
     height: 100%;
     margin-bottom: 5px;
-    background: #550065;
-    border: 1px solid #00c6ae;
+    background: #8a1538;
+    border: 2px solid #d4c164;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    color: #ff4700;
+    color: #eeeee4;
     font-size: 20px;
     font-family: QatarBold;
   }
@@ -767,8 +683,7 @@
     }
 
     .header,
-    .header2,
-    .header3 {
+    .header2 {
       height: 17vh;
     }
 
@@ -879,8 +794,7 @@
     }
 
     .header div a,
-    .header2 div a,
-    .header3 div a {
+    .header2 div a {
       position: absolute;
       translate: -1000px;
       opacity: 0;

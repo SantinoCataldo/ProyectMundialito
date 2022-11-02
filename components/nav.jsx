@@ -42,7 +42,6 @@ export default function Nav() {
                 <a href="#groups">Fase de Grupos</a>
                 <Image src="/img/rombo.jpg" alt="Rombo" width={8} height={8} />
                 <a href="#people">Personas</a>
-                <Image src="/img/rombo.jpg" alt="Rombo" width={8} height={8} />
                 {session ? <button onClick={handleSignOut}>Cerrar Sesion</button> : <button onClick={handleSignIn}>Iniciar Sesion</button>}
             </div>
 
