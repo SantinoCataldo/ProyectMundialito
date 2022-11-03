@@ -43,10 +43,7 @@ const Signin = () => {
     return <Heading>Checking Authentication ...</Heading>;
 
   if (session) {
-    setTimeout(() => {
-      push("/");
-    }, 5000);
-    return <Heading>You are already signed in</Heading>;
+      push("/home");
   }
 
   const handleOAuthSignIn = (provider) => () => signIn(provider);
