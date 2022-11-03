@@ -9,22 +9,6 @@ import styles from '../styles/Home.module.css'
 
 export default function Game() {
 
-    // SCROLL //
-
-    const [header, setHeader] = useState(false);
-
-    const changeHeader = () => {
-        if (window.scrollY >= 80) {
-            setHeader(true);
-        } else {
-            setHeader(false);
-        }
-    }
-
-    useEffect(() => {
-        window.addEventListener("scroll", changeHeader);
-    }, []);
-
     return (
         <div className={styles.container}>
             <Head>
@@ -939,7 +923,6 @@ export default function Game() {
                             </div>
                         </div>
                     </div>
-                    <a href="#register"><button className={styles.button}>Enviar</button></a> 
                 </form>
 
             </section>
