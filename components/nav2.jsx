@@ -32,7 +32,8 @@ export default function Nav() {
     return (
         <header className={header ? styles.header2 : styles.header3}>
             <div>
-            {session ? <div><img src={session.user.image} alt="Imagen-Usuario"></img><button>{session.user.name}</button></div> : <div></div>}
+                <div className={styles.logo1}></div>
+                {session ? <div><button>{session.user.name}</button></div> : <div></div>}
                 <h4>World Proyect</h4>
             </div>
             <div>
