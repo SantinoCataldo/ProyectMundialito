@@ -25,10 +25,6 @@ const providers = [
     Icon: BsGithub,
   },
   {
-    name: "twitter",
-    Icon: BsTwitter,
-  },
-  {
     name: "google",
     Icon: BsGoogle,
   },
