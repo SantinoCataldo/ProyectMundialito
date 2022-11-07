@@ -1,15 +1,12 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
-import Head from 'next/head'
-import Image from 'next/image'
-import { useEffect, useRef, useState } from 'react'
-import styles from '../styles/Home.module.css'
-import Timer from '../components/timer'
-
-
+import Head from "next/head";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+import styles from "../styles/Home.module.css";
+import Timer from "../components/timer";
 
 export default function Home() {
-
   return (
     <div className={styles.container}>
       <Head>
@@ -23,16 +20,32 @@ export default function Home() {
 
       <section className={styles.entry}>
         <div className={styles.logo}>
-          <Image src="/img/logo.jpg" alt="Mundial Logo" width={120} height={70} />
+          <Image
+            src="/img/logo.jpg"
+            alt="Mundial Logo"
+            width={120}
+            height={70}
+          />
         </div>
         <div className={styles.messi}></div>
         <h1>World Proyect</h1>
-        <a href="/home"><button className={styles.button}>Empezar</button></a>
+        <a href="/home">
+          <button className={styles.button}>Empezar</button>
+        </a>
         <Timer />
         <div className={styles.info}>
-          <p>En esta y las siguientes paginas vas a poder participar de un juego, el cual va a tener un premio monetario el cual vas a poder tener, si hacertas todos los goles del mundial de futbol Qatar 2022</p>
+          <p>
+            En esta y las siguientes paginas vas a poder participar de un juego,
+            el cual va a tener un premio monetario el cual vas a poder tener, si
+            hacertas todos los goles del mundial de futbol Qatar 2022
+          </p>
         </div>
       </section>
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3123456506046118"
+        crossorigin="anonymous"
+      ></script>
     </div>
-  )
+  );
 }
