@@ -4,10 +4,28 @@ import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 import Timer from '../components/timer2';
 import Nav from '../components/nav';
+import { MongoClient } from 'mongodb';
 
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export async function getStaticProps() {
+    const client = await MongoClient.connect(process.env.MONGODB_URI);
+    const db = client.db();
+
+    const accountsCollection = db.collection('accounts');
+
+    const accounts = await accountsCollection.countDocuments();
+    client.close();
+
+    return {
+        props: {
+            accounts: accounts,
+        },
+        revalidate: 1,
+    };
+}
+
+export default function Home({accounts}) {
     return (
         <div className={styles.container}>
             <Head>
@@ -208,16 +226,21 @@ export default function Home() {
                             <p>South Korea</p>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section className={styles.people} id="people">
-                <div>
-                    <Image src="/img/rombo.jpg" alt="Rombo" width={16} height={16} />
-                    <h2>Personas participando</h2>
-                    <p>1</p>
-                </div>
-                <img src="/img/marado.jpg" alt="maradona" />
-            </section>
+                    </div>
+                </section>
+
+                <section className={styles.groups} id="groups">
+                    <h2>Fase De Grupos</h2>
+                    <div></div>
+                </section>
+                <section className={styles.people} id="people">
+                    <div>
+                        <Image src="/img/rombo.jpg" alt="Rombo" width={16} height={16} />
+                        <h2>Personas participando</h2>
+                        <p>1</p>
+                    </div>
+                    <img src="/img/marado.jpg" alt="maradona" />
+                </section>
         </div>
     )
 }
