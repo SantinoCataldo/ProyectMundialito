@@ -229,10 +229,6 @@ export default function Home({accounts}) {
                     </div>
                 </section>
 
-                <section className={styles.groups} id="groups">
-                    <h2>Fase De Grupos</h2>
-                    <div></div>
-                </section>
                 <section className={styles.people} id="people">
                     <div>
                         <Image src="/img/rombo.jpg" alt="Rombo" width={16} height={16} />
