@@ -237,7 +237,7 @@ export default function Home({accounts}) {
                     <div>
                         <Image src="/img/rombo.jpg" alt="Rombo" width={16} height={16} />
                         <h2>Personas participando</h2>
-                        <p>1</p>
+                        <p>{accounts}</p>
                     </div>
                     <img src="/img/marado.jpg" alt="maradona" />
                 </section>
