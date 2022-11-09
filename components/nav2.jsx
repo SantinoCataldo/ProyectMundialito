@@ -34,7 +34,7 @@ export default function Nav() {
             <div>
                 <div className={styles.logo1}></div>
                 {session ? <div><button>{session.user.name}</button></div> : <div></div>}
-                <h4>World Proyect</h4>
+                <h4>Mundialito</h4>
             </div>
             <div>
                 <a href="#groups">Fase de Grupos</a>

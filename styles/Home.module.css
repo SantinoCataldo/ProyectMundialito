@@ -430,21 +430,89 @@
     height: 100vh;
     width: 100%;
     background: #eeeee4;
-    display: inline-block;
-    padding: 70px 100px 50px;
+    display: flex;
+    justify-content: center;
+    padding: 120px 40px 80px 60px;
+  }
+
+  .groups .groups_info {
+    width: 60%;
   }
 
   .groups h2 {
     color: #8a1538;
     font-size: 32px;
+    margin-top: -40px;
   }
 
-  .groups div {
-    translate: 450px;
-    height: 380px;
-    width: 700px;
-    background: url(../public/img/grupos.jpg);
-    background-size: cover;
+  .groups p {
+    color: #8a1538;
+  }
+
+  
+  /*---- GAME -----*/
+
+  .game {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .game h2 {
+    position: absolute;
+    top: -20px;
+    color: #00c6ae;
+    font-size: 48px;
+  }
+
+  /*---- GRUPOS ----*/
+
+  .game_groups {
+    background: #eeeee4;
+    height: 184px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 16px;
+    color: #8a1538;
+    border: 1px solid #8a1538;
+  }
+
+  .game_groups div {
+    display: flex;
+    margin: 2px 0;
+    padding: 5px 8px;
+    background: #8a1538;
+    border-radius: 3px;
+    gap: 10px;
+    align-items: center;
+    color: #eeeee4;
+    transition: .3s;
+    cursor: pointer;
+  }
+
+  .game_groups div:hover {
+    scale: 1.05;
+  }
+
+  .game_groups img {
+    height: 20px;
+    margin: 0;
+    border: 1px solid #d4c164;
+  }
+
+  .game_groups p {
+    margin: 0;
+    color: #eeeee4;
+    font-size: 14px;
+  }
+
+  .game_groups h4 {
+    font-family: QatarBold;
+    font-size: 16px;
+    margin: 8px 0 2px;
   }
 
   .people {
@@ -529,74 +597,6 @@
   .register input:focus {
     border-bottom: 1px solid #8a1538;
     outline: none;
-  }
-
-  /*---- GAME -----*/
-
-  .game {
-    min-height: 500vh;
-    width: 100%;
-    background: #eeeee4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 100px;
-    flex-wrap: wrap;
-    position: relative;
-    padding-top: 100px;
-  }
-
-  .game h2 {
-    position: absolute;
-    top: -20px;
-    color: #00c6ae;
-    font-size: 48px;
-  }
-
-  /*---- GRUPOS ----*/
-
-  .game_groups {
-    background: #eeeee4;
-    height: 320px;
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 16px;
-    color: #8a1538;
-    border: 1px solid #8a1538;
-    margin-bottom: 10px;
-  }
-
-  .game_groups div {
-    display: flex;
-    margin: 5px 0;
-    padding: 8px;
-    background: #8a1538;
-    border-radius: 5px;
-    gap: 10px;
-    align-items: center;
-    color: #eeeee4;
-  }
-
-  .game_groups img {
-    height: 30px;
-    border: 1px solid #d4c164;
-  }
-
-  .game_groups p {
-    margin: 0;
-  }
-
-  .game_groups h4 {
-    font-family: QatarBold;
-    font-size: 20px;
-  }
-
-  .game_groups div h4 {
-    margin: 0;
-    font-size: 19px;
-    color: #d4c164;
   }
 
   /*---- PREDICTS ----*/
@@ -776,7 +776,8 @@
     }
 
     .header,
-    .header2 {
+    .header2,
+    .header3 {
       height: 17vh;
     }
 
@@ -887,7 +888,8 @@
     }
 
     .header div a,
-    .header2 div a {
+    .header2 div a,
+    .header3 div a {
       position: absolute;
       translate: -1000px;
       opacity: 0;
