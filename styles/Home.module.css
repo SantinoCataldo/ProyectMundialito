@@ -433,10 +433,115 @@
     display: flex;
     justify-content: center;
     padding: 120px 40px 80px 60px;
+    position: relative;
   }
 
   .groups .groups_info {
     width: 60%;
+  }
+
+  .teams {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.158);
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .teams_box {
+    height: 85vh;
+    width: 85%;
+    background: #eeeee4;
+    border: 1px solid #8a1538;
+    display: flex;
+  }
+
+  .teams_informations {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #8a1538;
+  }
+
+  .teams_informations h4,
+  .teams_informations h2 {
+    margin-bottom: 6px;
+  }
+
+  .teams_informations h5 {
+    margin: -22px;
+    background: #8a1538;
+    padding: 30px;
+    color: #eeeee4;
+    clip-path: polygon(10% 25%, 90% 25%, 100% 50%, 90% 75%, 10% 75%, 0% 50%);
+  }
+
+  .teams_informations h6 {
+    margin: -22px;
+    background: #8a1538;
+    padding: 30px;
+    color: #eeeee4;
+    clip-path: polygon(18% 25%, 82% 25%, 100% 50%, 82% 75%, 18% 75%, 0% 50%);
+    font-size: 16px;
+    font-family: QatarBold;
+    color: #d4c164;
+  }
+
+  .teams_informations div {
+    border: 1px solid #8a1538;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+  }
+
+  .teams_informations div img {
+    height: 40px;
+    width: 40px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    margin-right: 10px;
+  }
+
+  .teams_players {
+    height: 100%;
+    width: 70%;
+    background: #8a1538;
+    color: #eeeee4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .teams_players h4 {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .teams_players h5 {
+    color: #8a1538;
+    background: #eeeee4;
+    padding: 14px;
+    clip-path: polygon(8% 25%, 92% 25%, 100% 50%, 92% 75%, 8% 75%, 0% 50%);
+    margin: -21px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: .1s;
+  }
+
+  .teams_players h5:hover {
+    scale: 1.05;
+  }
+
+  .teams_players h3 {
+    color: #d4c164;
   }
 
   .groups h2 {
@@ -449,7 +554,71 @@
     color: #8a1538;
   }
 
-  
+  /*---- MATCH -----*/
+
+  .matches {
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: #8a1538;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .timeline {
+    outline: 1px solid #d4c164;
+    min-height: 160px;
+    width: 320px;
+  }
+
+  .timeline p {
+    margin: 0;
+  }
+
+  .timeline img {
+    height: 35px;
+  }
+
+  .timeline div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .timeline_calendar {
+    background: #eeeee4;
+    text-align: center;
+    height: 32px;
+    color: #8a1538;
+  }
+
+  .timeline_stadium {
+    background: #00c6ae;
+    height: 27px;
+  }
+
+  .timeline_match {
+    background: #d4c164;
+    color: #64152c;
+    height: 50.5px;
+    gap: 8px;
+  }
+
+  .timeline_tv {
+    background: #64152c;
+    color: #eeeee4;
+    height: 25.5px;
+  }
+
+  .timeline_hour {
+    background: #8a1538;
+    color: #eeeee4;
+    height: 25px;
+  }
+
   /*---- GAME -----*/
 
   .game {

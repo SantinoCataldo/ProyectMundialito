@@ -25,7 +25,7 @@ export async function getStaticProps() {
     };
 }
 
-export default function Home({accounts}) {
+export default function Home({ accounts }) {
     return (
         <div className={styles.container}>
             <Head>
@@ -226,17 +226,328 @@ export default function Home({accounts}) {
                             <p>South Korea</p>
                         </div>
                     </div>
-                    </div>
-                </section>
+                </div>
+                <section className={styles.teams}>
+                    <div className={styles.teams_box}>
+                        <div className={styles.teams_informations}>
+                            <h2>Qatar</h2>
+                            <img src="https://www.promiedos.com.ar/images/64/894.png" alt="" />
+                            <p>Sin copas</p>
+                            <h4>Ultima Participacion</h4>
+                            <h5>Esta sera su primera</h5>
+                            <h4>Ranking fifa</h4>
+                            <h6>50</h6>
+                            <h4>DT</h4>
+                            <div>
+                                <img src="/img/selections/QAT.jpg" alt="" />
+                                <h3>Félix Sánchez Bas</h3>
+                            </div>
+                        </div>
+                        <div className={styles.teams_players}>
+                            <div>
+                                <h4>Convocados</h4>
+                                <h3>Arqueros</h3>
+                                <h5>Saad Al Sheeb</h5>
+                                <h5>Meshaal Barsham</h5>
+                                <h5>Yousuf Hassan</h5>
 
-                <section className={styles.people} id="people">
-                    <div>
-                        <Image src="/img/rombo.jpg" alt="Rombo" width={16} height={16} />
-                        <h2>Personas participando</h2>
-                        <p>{accounts}</p>
+                                <h3>Defensores</h3>
+                                <h5>Pedro Miguel</h5>
+                                <h5>Musaab Khidir</h5>
+                                <h5>Tarek Salman</h5>
+                                <h5>Bassam Al Rawi</h5>
+                                <h5>Khoukhi Boualem</h5>
+                                <h5>AbdelKarim Hassan</h5>
+                            </div>
+                            <div>
+                                <h3>Mediocampistas</h3>
+                                <h5>Ismaeel Mohammad</h5>
+                                <h5>Hammam Al Amin</h5>
+                                <h5>Jassim Jabir</h5>
+                                <h5>Ali Asad</h5>
+                                <h5>Mohammed Waad</h5>
+                                <h5>Salem Al- Hajri</h5>
+                                <h5>Assim Madibo</h5>
+                                <h5>Mustafa Mashaal</h5>
+                            </div>
+                            <div>   
+                                <h3>Delanteros</h3>
+                                <h5>Karim Boudiaf</h5>
+                                <h5>Abdulaziz Hatem</h5>
+                                <h5>Naif Al-Hadhrami</h5>
+                                <h5>Hassan Al-Haidos</h5>
+                                <h5>Akram Afif</h5>
+                                <h5>Almoez Ali</h5>
+                                <h5>Mohammed Muntari</h5>
+                                <h5>Ahmed Alaa</h5>
+                                <h5>Khalid Muneer</h5>
+                            </div>
+                        </div>
                     </div>
-                    <img src="/img/marado.jpg" alt="maradona" />
                 </section>
+                {/* <section className={styles.teams}>
+                    <div className={styles.teams_box}>
+                        <div className={styles.teams_informations}>
+                            <h2>Ecuador</h2>
+                            <img src="https://www.promiedos.com.ar/images/64/853.png" alt="" />
+                            <p>Sin copas</p>
+                            <h4>Ultima Participacion</h4>
+                            <h5>2014 | Fase de grupos</h5>
+                            <h4>Ranking fifa</h4>
+                            <h6>44</h6>
+                            <h4>DT</h4>
+                            <div>
+                                <img src="/img/selections/ECU.jpg" alt="" />
+                                <h3>Gustavo Alfaro</h3>
+                            </div>
+                        </div>
+                        <div className={styles.teams_players}>
+                        <div>
+                                <h4>Convocados</h4>
+                                <h3>Arqueros</h3>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+
+                                <h3>Defensores</h3>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                            </div>
+                            <div>
+                                <h3>Mediocampistas</h3>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                            </div>
+                            <div>   
+                                <h3>Delanteros</h3>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                                <h5></h5>
+                            </div>
+                        </div>
+                    </div>
+                </section> */}
+                {/* <section className={styles.teams}>
+                    <div className={styles.teams_box}>
+                        <div className={styles.teams_informations}>
+                            <h2>Senegal</h2>
+                            <img src="https://www.promiedos.com.ar/images/64/814.png" alt="" />
+                            <p>Sin copas</p>
+                            <h4>Ultima Participacion</h4>
+                            <h5>2018 | Fase de grupos</h5>
+                            <h4>Ranking fifa</h4>
+                            <h6>18</h6>
+                            <h4>DT</h4>
+                            <div>
+                                <img src="/img/selections/SEN.jpg" alt="" />
+                                <h3>Aliou Cissé</h3>
+                            </div>
+                        </div>
+                        <div className={styles.teams_players}>
+                        <div>
+                                <h4>Convocados</h4>
+                                <h3>Arqueros</h3>
+                                <h5>Edouard Mendy</h5>
+                                <h5>Alfred Gomis</h5>
+                                <h5>Seny Dieng</h5>
+
+                                <h3>Defensores</h3>
+                                <h5>Kalidou Koulibaly</h5>
+                                <h5>Abdou Diallo</h5>
+                                <h5>Youssouf Sabaly</h5>
+                                <h5>Fodé Ballo-Touré</h5>
+                                <h5>Pape Abou Cisse</h5>
+                                <h5>Ismail Jakobs</h5>
+                                <h5>Formose Mendy</h5>
+                            </div>
+                            <div>
+                                <h3>Mediocampistas</h3>
+                                <h5>Gana Gueye</h5>
+                                <h5>Cheikhou Kouyaté</h5>
+                                <h5>Nampalys Mendy</h5>
+                                <h5>Krepin Diatta</h5>
+                                <h5>Pape Gueye</h5>
+                                <h5>Pape Matar Sarr</h5>
+                                <h5>Pathé Ciss</h5>
+                                <h5>Moustapha Name</h5>
+                                <h5>Loum N Diaye</h5>
+                            </div>
+                            <div>   
+                                <h3>Delanteros</h3>
+                                <h5>Sadio Mané</h5>
+                                <h5>Ismaila Sarr</h5>
+                                <h5>Boulaye Dia</h5>
+                                <h5>Bamba Dieng</h5>
+                                <h5>Famara Diédhiou</h5>
+                                <h5>Nicolas Jackson</h5>
+                                <h5>Iliman Ndiaye</h5>
+                            </div>
+                        </div>
+                    </div>
+                </section> */}
+                {/* <section className={styles.teams}>
+                    <div className={styles.teams_box}>
+                        <div className={styles.teams_informations}>
+                            <h2>Netherlands</h2>
+                            <img src="https://www.promiedos.com.ar/images/64/846.png" alt="" />
+                            <p>Sin copas</p>
+                            <h4>Ultima Participacion</h4>
+                            <h5>2014 | Tercer puesto</h5>
+                            <h4>Ranking fifa</h4>
+                            <h6>8</h6>
+                            <h4>DT</h4>
+                            <div>
+                                <img src="/img/selections/NED.jpg" alt="" />
+                                <h3>Louis van Gaal</h3>
+                            </div>
+                        </div>
+                        <div className={styles.teams_players}>
+                        <div>
+                                <h4>Convocados</h4>
+                                <h3>Arqueros</h3>
+                                <h5>Justin Bijlow</h5>
+                                <h5>Andries Noppert</h5>
+                                <h5>Remko Pasveer</h5>
+
+                                <h3>Defensores</h3>
+                                <h5>Virgil van Dijk</h5>
+                                <h5>Nathan Aké</h5>
+                                <h5>Daley Blind</h5>
+                                <h5>Jurriën Timber</h5>
+                                <h5>Denzel Dumfries</h5>
+                                <h5>Stefan de Vrij</h5>
+                                <h5>Matthijs de Ligt</h5>
+                                <h5>Tyrell Malacia</h5>
+                                <h5>Jeremie Frimpong</h5>
+                            </div>
+                            <div>
+                                <h3>Mediocampistas</h3>
+                                <h5>Frenkie de Jong</h5>
+                                <h5>Steven Berghuis</h5>
+                                <h5>Davy Klaasen</h5>
+                                <h5>Teun Koopmeiners</h5>
+                                <h5>Cody Gakpo</h5>
+                                <h5>Marten de Roon</h5>
+                                <h5>Kenneth Taylor</h5>
+                                <h5>Xavi Simons</h5>
+                            </div>
+                            <div>   
+                                <h3>Delanteros</h3>
+                                <h5>Memphis Depay</h5>
+                                <h5>Steven Bergwijn</h5>
+                                <h5>Vincent Janssen</h5>
+                                <h5>Luuk de Jong</h5>
+                                <h5>Noa Lang</h5>
+                                <h5>Wout Weghorst</h5>
+                            </div>
+                        </div>
+                    </div>
+                </section> */}
+            </section>  
+
+            <section className={styles.matches}>
+                <div>
+                <div className={styles.timeline}>
+                    <div className={styles.timeline_calendar}>
+                        <p>Domingo 20 de Noviembre</p>
+                    </div>
+                    <div className={styles.timeline_stadium}>
+                        <p>Estadio Al Bayt - Jor</p>
+                    </div>
+                    <div className={styles.timeline_tv}>
+                        <p>TV PUBLICA/DIRECTV</p>
+                    </div>
+                    <div className={styles.timeline_hour}>
+                        <p>13:00</p>
+                    </div>
+                    <div className={styles.timeline_match}>
+                        <img src="/img/selections/QAT.jpg" alt="" />
+                        <p>Qatar</p>
+                        <p> - </p>
+                        <p>Ecuador</p>
+                        <img src="/img/selections/ECU.jpg" alt="" />
+                    </div>
+                </div>
+                </div>
+                <div className={styles.timeline}>
+                    <div className={styles.timeline_calendar}>
+                        <p>Lunes 21 de Noviembre</p>
+                    </div>
+                    <div className={styles.timeline_stadium}>
+                        <p>Estadio Khalifa - Doha</p>
+                    </div>
+                    <div className={styles.timeline_tv}>
+                        <p>TYC SPORTS/DIRECTV</p>
+                    </div>
+                    <div className={styles.timeline_hour}>
+                        <p>10:00</p>
+                    </div>
+                    <div className={styles.timeline_match}>
+                        <img src="/img/selections/ENG.jpg" alt="" />
+                        <p>England</p>
+                        <p> - </p>
+                        <p>IR Iran</p>
+                        <img src="/img/selections/IRN.jpg" alt="" />
+                    </div>
+                    <div className={styles.timeline_stadium}>
+                        <p>Stadio Al Thumama - Doha</p>
+                    </div>
+                    <div className={styles.timeline_tv}>
+                        <p>TV PUBLICA/DIRECTV</p>
+                    </div>
+                    <div className={styles.timeline_hour}>
+                        <p>13:00</p>
+                    </div>
+                    <div className={styles.timeline_match}>
+                        <img src="/img/selections/SEN.jpg" alt="" />
+                        <p>Senegal</p>
+                        <p> - </p>
+                        <p>Netherlands</p>
+                        <img src="/img/selections/NED.jpg" alt="" />
+                    </div>
+                    <div className={styles.timeline_stadium}>
+                        <p>Estadio Ahmad bin Ali - Rayan</p>
+                    </div>
+                    <div className={styles.timeline_tv}>
+                        <p>TYC SPORTS/DIRECTV</p>
+                    </div>
+                    <div className={styles.timeline_hour}>
+                        <p>13:00</p>
+                    </div>
+                    <div className={styles.timeline_match}>
+                        <img src="/img/selections/USA.jpg" alt="" />
+                        <p>Qatar</p>
+                        <p> - </p>
+                        <p>Ecuador</p>
+                        <img src="/img/selections/WAL.jpg" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <section className={styles.people} id="people">
+                <div>
+                    <Image src="/img/rombo.jpg" alt="Rombo" width={16} height={16} />
+                    <h2>Personas participando</h2>
+                    <p>{accounts}</p>
+                </div>
+                <img src="/img/marado.jpg" alt="maradona" />
+            </section>
         </div>
     )
 }
