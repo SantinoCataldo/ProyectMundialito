@@ -20,4 +20,5 @@ export default NextAuth({
     signIn: "/auth/login",
   },
   adapter: MongoDBAdapter(clientPromise),
+  secret: process.env.SECRET,
 });
