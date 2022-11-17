@@ -459,6 +459,7 @@
     background: #eeeee4;
     border: 1px solid #8a1538;
     display: flex;
+    position: relative;
   }
 
   .teams_informations {
@@ -527,9 +528,9 @@
   .teams_players h5 {
     color: #8a1538;
     background: #eeeee4;
-    padding: 14px;
+    padding: 13px;
     clip-path: polygon(8% 25%, 92% 25%, 100% 50%, 92% 75%, 8% 75%, 0% 50%);
-    margin: -21px;
+    margin: -22px;
     font-size: 16px;
     text-align: center;
     letter-spacing: 1px;
@@ -542,6 +543,20 @@
 
   .teams_players h3 {
     color: #d4c164;
+  }
+
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    font-size: 32px;
+    color: #d4c164;
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  .close:hover {
+    scale: 1.08;
   }
 
   .groups h2 {
@@ -970,14 +985,6 @@
       margin-bottom: 0;
     }
 
-    .groups div {
-      translate: 0;
-      height: 230px;
-      width: 425px;
-      background: url(../public/img/grupos.jpg);
-      background-size: cover;
-    }
-
     .people {
       height: 90vh;
       gap: 50px;
@@ -1079,19 +1086,11 @@
 
     .groups {
       padding: 0;
-      height: 60vh;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-    }
-
-    .groups div {
-      translate: 0;
-      height: 190px;
-      width: 350px;
-      background: url(../public/img/grupos.jpg);
-      background-size: cover;
     }
 
     .game {
