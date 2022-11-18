@@ -63,7 +63,6 @@ export default function Home({ accounts }) {
             </section>
             <Modal />
             <section className={styles.matches}>
-                <div>
                 <div className={styles.timeline}>
                     <div className={styles.timeline_calendar}>
                         <p>Domingo 20 de Noviembre</p>
@@ -85,7 +84,6 @@ export default function Home({ accounts }) {
                         <img src="/img/selections/ECU.jpg" alt="" />
                     </div>
                 </div>
-                </div>
                 <div className={styles.timeline}>
                     <div className={styles.timeline_calendar}>
                         <p>Lunes 21 de Noviembre</p>
@@ -106,6 +104,7 @@ export default function Home({ accounts }) {
                         <p>IR Iran</p>
                         <img src="/img/selections/IRN.jpg" alt="" />
                     </div>
+                    <div className={styles.timeline_calendar}><p>Siguiente partido</p></div>
                     <div className={styles.timeline_stadium}>
                         <p>Stadio Al Thumama - Doha</p>
                     </div>
@@ -122,6 +121,7 @@ export default function Home({ accounts }) {
                         <p>Netherlands</p>
                         <img src="/img/selections/NED.jpg" alt="" />
                     </div>
+                    <div className={styles.timeline_calendar}><p>Siguiente partido</p></div>
                     <div className={styles.timeline_stadium}>
                         <p>Estadio Ahmad bin Ali - Rayan</p>
                     </div>
@@ -133,10 +133,83 @@ export default function Home({ accounts }) {
                     </div>
                     <div className={styles.timeline_match}>
                         <img src="/img/selections/USA.jpg" alt="" />
-                        <p>Qatar</p>
+                        <p>USA</p>
                         <p> - </p>
-                        <p>Ecuador</p>
+                        <p>Wales</p>
                         <img src="/img/selections/WAL.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div className={styles.timeline}>
+                    <div className={styles.timeline_calendar}>
+                        <p>Lunes 22 de Noviembre</p>
+                    </div>
+                    <div className={styles.timeline_stadium}>
+                        <p>Estadio Lusail - Lusail</p>
+                    </div>
+                    <div className={styles.timeline_tv}>
+                        <p>TV PUBLICA/TYC SPORTS/DIRECTV</p>
+                    </div>
+                    <div className={styles.timeline_hour}>
+                        <p>07:00</p>
+                    </div>
+                    <div className={styles.timeline_match}>
+                        <img src="/img/selections/ARG.jpg" alt="" />
+                        <p>Argentina</p>
+                        <p> - </p>
+                        <p>Saudi Arabia</p>
+                        <img src="/img/selections/KSA.jpg" alt="" />
+                    </div>
+                    <div className={styles.timeline_calendar}><p>Siguiente partido</p></div>
+                    <div className={styles.timeline_stadium}>
+                        <p>Estadio Ciudad de la Educacion - Rayan</p>
+                    </div>
+                    <div className={styles.timeline_tv}>
+                        <p>TYC SPORTS/DIRECTV</p>
+                    </div>
+                    <div className={styles.timeline_hour}>
+                        <p>10:00</p>
+                    </div>
+                    <div className={styles.timeline_match}>
+                        <img src="/img/selections/DEN.jpg" alt="" />
+                        <p>Denmark</p>
+                        <p> - </p>
+                        <p>Tunisa</p>
+                        <img src="/img/selections/TUN.jpg" alt="" />
+                    </div>
+                    <div className={styles.timeline_calendar}><p>Siguiente partido</p></div>
+                    <div className={styles.timeline_stadium}>
+                        <p>Estadio 974 - Doha</p>
+                    </div>
+                    <div className={styles.timeline_tv}>
+                        <p>TYC SPORTS/DIRECTV</p>
+                    </div>
+                    <div className={styles.timeline_hour}>
+                        <p>13:00</p>
+                    </div>
+                    <div className={styles.timeline_match}>
+                        <img src="/img/selections/MEX.jpg" alt="" />
+                        <p>Mexico</p>
+                        <p> - </p>
+                        <p>Polonia</p>
+                        <img src="/img/selections/POL.jpg" alt="" />
+                    </div>
+                    <div className={styles.timeline_calendar}><p>Siguiente partido</p></div>
+                    <div className={styles.timeline_stadium}>
+                        <p>Estadio Al Janoub - Al Wakrah</p>
+                    </div>
+                    <div className={styles.timeline_tv}>
+                        <p>TV PUBLICA/DIRECTV</p>
+                    </div>
+                    <div className={styles.timeline_hour}>
+                        <p>16:00</p>
+                    </div>
+                    <div className={styles.timeline_match}>
+                        <img src="/img/selections/FRA.jpg" alt="" />
+                        <p>France</p>
+                        <p> - </p>
+                        <p>Australia</p>
+                        <img src="/img/selections/AUS.jpg" alt="" />
                     </div>
                 </div>
             </section>

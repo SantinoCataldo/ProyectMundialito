@@ -496,11 +496,15 @@
     color: #d4c164;
   }
 
-  .teams_informations div {
+  .teams_informations .dt {
     border: 1px solid #8a1538;
     display: flex;
     align-items: center;
-    padding: 0px 10px;
+    padding: 4px 10px;
+  }
+
+  .teams_informations .dt h3 {
+    margin: 0;
   }
 
   .teams_informations div img {
@@ -508,6 +512,34 @@
     width: 40px;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     margin-right: 10px;
+  }
+
+  .wordl {
+    display: flex;
+    height: 70px;
+    column-gap: 16px;
+    align-items: center;
+  }
+
+  .champions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .champions p {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background: #d4c164;
+    height: 20px;
+    width: 20px;
+    margin: 0;
+  }
+
+  .champions h3 {
+    margin: 0;
+    color: #8a1538;
+    
   }
 
   .teams_players {
@@ -585,16 +617,17 @@
 
   .timeline {
     outline: 1px solid #d4c164;
-    min-height: 160px;
-    width: 320px;
+    min-height: 140px;
+    width: 265px;
   }
 
   .timeline p {
     margin: 0;
+    font-size: 14px;
   }
 
   .timeline img {
-    height: 35px;
+    height: 22px;
   }
 
   .timeline div {
@@ -606,31 +639,32 @@
   .timeline_calendar {
     background: #eeeee4;
     text-align: center;
-    height: 32px;
+    height: 30px;
     color: #8a1538;
   }
 
   .timeline_stadium {
     background: #00c6ae;
-    height: 27px;
+    height: 25px;
+    color: #550065;
   }
 
   .timeline_match {
     background: #d4c164;
     color: #64152c;
-    height: 50.5px;
+    height: 50px;
     gap: 8px;
   }
 
   .timeline_tv {
     background: #64152c;
     color: #eeeee4;
-    height: 25.5px;
+    height: 23px;
   }
 
   .timeline_hour {
-    background: #8a1538;
-    color: #eeeee4;
+    background: #550065;
+    color: #00cfb7;
     height: 25px;
   }
 
